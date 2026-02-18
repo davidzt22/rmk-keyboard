@@ -9,7 +9,7 @@ chip = "nrf52840"
 
 [matrix]
 matrix_type="direct_pin"
-direct_pins = [["P0_09", "P0_10"], ["P0_11", "P0_13"]]
+direct_pins = [["P0_09", "P0_10"], ["P1_11", "P1_13"]]
 
 [layout]
 rows = 2
@@ -25,3 +25,12 @@ keymap = [
         ["_", "_"]
     ],
 ]
+encoder_map = [
+  [ ["AudioVolUp", "AudioVolDown"]], 
+  [ ["_", "_"]]
+]
+
+[[input_device.encoder]]
+pin_a = "P1_04"
+pin_b = "P1_06"
+phase = "default"
